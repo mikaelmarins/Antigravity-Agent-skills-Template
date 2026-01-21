@@ -55,3 +55,16 @@ This template operates on the principle of **Context-Aware Agents**. By maintain
 1.  **Context is King**: The agent always knows *what* it is building and *how*.
 2.  **Safety First**: Security rules are injected into every session.
 3.  **Evolution**: The agent improves its own tools via `skill-creator`.
+
+## 🔄 Using in Existing Projects (Legacy)
+
+To add this brain to a project that **already exists**:
+
+1.  Copy the `.agent/` folder to your project root.
+2.  **Run the Onboarding Workflow**:
+    *   Ask the agent: *"Execute the onboard_existing_project workflow."*
+3.  **What happens**:
+    *   The agent scans your files (`package.json`, etc.).
+    *   It auto-fills `AI_MEMORY.md` with your current stack.
+    *   It extracts rules from your existing `README.md`.
+    *   It proposes new skills based on your code (ex: `skill-react`, `skill-python`).
